@@ -23,7 +23,7 @@ deploy:
   provider: releases
   api_key:
     secure: jhPKH0hOLOrkq0piirnSoqne9RHDm68TXQScpgL20oxsTU5kxfMggd8Pusp4KF7+uFSnxOu2xAsThszNfnvxCtdLZjijWklr5y7rrb6xbttvrQ+WOqRoQBZmJpZogqLUBEDh9iivsGeSQKK2OPtF+v68k1i/nd3nszqNekehaW9exAYD0krTjKSzoL3HvZ1xnw0FinKLBvepmgR/zS9eSCI1nJNMR+FxT3UbAf6FYyDKSjiy/pBctBkx34o9ZLGhDpVMKNXB9tr+tqb62obwBv1ZXmRs5Fz6QeEkMZZJ1TFEGywnK1QgmPVH66q+9KLbRqasNOqhKWaPdPfKpyBcLuwcSQS7IMSUbYcp6EFqXQYxVaNMj0tjoLMe0m/mr+l5OsQexlydp7SXn2Sgw9W/LEBQVwgvnk0+WLZGI3Isp0oBCKBbjGWEJ0qoWmzGNQOItvGkli+AgDAM7/Grx7k4ZkDZLPraxTyc9maIozclsjm/FP99AbA1slJvimdf7bhUTieQCFtN4kxEvEktT1vpZdN6kC0BfUvLT7mRqy2TNRLSirMsMTZX995dA8sZUfu7PsKFJOar1w0L4EycEmZw0hb/ggADc/6jO55k1v50WhrEZz47RETk4ZKglQnnpjttTTodYOpiEMsl0PYeXukj5qN5QLHFZKPAqUgdPKn+UaY=
-  file: sample/build/outputs/apk/release/jlog_storage_disk_sample.apk
+  file: sample/build/outputs/apk/release/jlog_storage_disk_sample_release.apk
   on:
       tags: true
       all_branches: true
