@@ -16,12 +16,12 @@
 
 package com.jiongbull.jlog.storage.disk.sample;
 
+import android.annotation.SuppressLint;
+import android.app.Application;
+
 import com.jiongbull.jlog.Logger;
 import com.jiongbull.jlog.storage.disk.DiskConfigs;
 import com.jiongbull.jlog.storage.disk.DiskStorage;
-
-import android.annotation.SuppressLint;
-import android.app.Application;
 
 /**
  * Root application.
@@ -30,6 +30,10 @@ public class RootApp extends Application {
 
     @SuppressLint("StaticFieldLeak")
     private static Logger sLogger;
+
+    public static Logger getLogger() {
+        return sLogger;
+    }
 
     @Override
     public void onCreate() {
@@ -42,10 +46,7 @@ public class RootApp extends Application {
 
         sLogger = Logger.Builder.newBuilder(getApplicationContext(), "jlog")
                 .setWriteToFile(true)
-                .setStorage(new DiskStorage(diskConfigs)).build();
-    }
-
-    public static Logger getLogger() {
-        return sLogger;
+                .setStorage(new DiskStorage(diskConfigs))
+                .build();
     }
 }

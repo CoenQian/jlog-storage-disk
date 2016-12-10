@@ -27,6 +27,7 @@ public class DiskConfigs {
     private static final long DEFAULT_DISK_CAPACITY = 20971520;
     /** 日志的存储空间，单位byte. */
     private long mCapacity;
+
     private DiskConfigs(@NonNull Builder builder) {
         mCapacity = builder.mCapacity;
     }

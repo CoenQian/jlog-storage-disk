@@ -16,12 +16,12 @@
 
 package com.jiongbull.jlog.storage.disk;
 
+import android.support.annotation.NonNull;
+
 import com.jiongbull.jlog.IStorage;
 import com.jiongbull.jlog.Logger;
 import com.jiongbull.jlog.util.FileUtils;
 import com.jiongbull.jlog.util.LogUtils;
-
-import android.support.annotation.NonNull;
 
 import java.io.File;
 
